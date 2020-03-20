@@ -1,0 +1,220 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: url('images/back1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+#welcome-image{
+    width: 50vw;
+}
+.welcome-text{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.5rem;
+    background: rgb(69, 177, 78,0.4);
+    padding: 2vw;
+    text-align: justify;
+    border-radius: 20px;
+
+}
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(41, 40, 40);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+#header-img{
+    width: 12rem;
+}
+.burger{
+    display: none;
+}
+.burger div{
+    width: 30px;
+    height: 5px;
+    background-color: rgb(211, 205, 205);
+    margin: 5px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    color: rgb(211, 205, 205);
+    font-size: 4vh;
+}
+.nav-links li{
+    list-style: none;
+    margin: 5px;
+    margin-right: 8vw;
+}
+.nav-links li a {
+    color: rgb(211, 205, 205);
+    text-decoration: none;
+}
+.video-class{
+    width: 100%;
+    height: 100vh;
+    margin-top: 100vh;
+    background-image: url('images/back2.jpg');
+    background-size: cover;
+}
+#video-head{
+    text-align: center;
+    padding: 6vw;
+    color: rgb(62, 79, 173);
+
+}
+#video{
+    margin: auto;
+    margin-left: 20vw;
+    width: 55vw;
+    height: 55vh;
+}
+#mail{
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/back3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-evenly;
+}
+#display-text{
+    font-size: 1.3rem;
+    width: 50vw;
+    height: 40vh;
+    text-align: justify;
+    margin-top: 30vh;
+    background: rgb(105, 105, 105,0.5);
+    color: white;
+    padding: 2vw;
+    overflow: hidden;
+    border-radius: 20px;
+}
+#form {
+    margin-top: 40vh;
+}
+#email{
+    
+    width: 40vw;
+    background: transparent;
+	color:white;
+	border-top: none;
+	border-left: none;
+	border-right:none;
+    border-bottom: 2px solid white;
+    height: 6vh;
+    text-align: center;
+}
+#submit{
+    width: 40vw;
+    height: 6vh;
+    text-align: center;
+    margin-top: 8vh;
+    border-radius: 10px;
+}
+#submit:hover{
+    background:rgb(69, 177, 78);
+    color: white;
+}
+::placeholder{
+    text-align: center;
+    color: white;
+}
+#footer{
+    width: 100vw;
+    background-color: rgb(41, 40, 40);
+    height: 4vh;
+    text-align: center;
+    font-size: 1.1rem;
+    color:white;
+}
+@media screen and (max-width:769px){
+    #nav-links{
+        overflow: hidden;
+    }
+    .burger{
+        display: block;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    #nav-bar{
+        justify-content: space-around;
+    }
+    .nav-links{
+        position: absolute;
+        flex-direction: column;
+        background-color: rgb(41, 40, 40);
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%,-50%);
+        border-radius: 20px;
+        height: 65vh;
+        width: 58vw;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-left: 2vw;
+        transform: translate(100%);
+        /* transition: transform 0.3s ease-in; */
+    }
+    .nav-active{
+        transform: translate(-50%,-50%);
+
+    }
+    .welcome-text{
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-10%,-40%);
+        font-size: 1.3rem;
+        background: rgb(69, 177, 78,0.4);
+        padding: 2vw;
+    
+    }
+    #video{
+        margin: auto;
+        margin-left: 2vw;
+        width: 95vw;
+        height: 40vh;
+    }
+    #mail{
+        flex-direction: column;
+    }
+    #form {
+        margin-top: 10vh;
+    }
+    #display-text{
+        font-size: 1rem;
+        width: 95vw;
+        height: 95vh;
+        margin-top: 2vh;
+        margin-left: 2vw;
+    
+    }
+    
+    #email{
+    
+        width: 80vw;
+        margin-left: 8vw;
+    }
+    #submit{
+        margin-left: 30vw;
+    }
+    
+}

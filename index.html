@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <div class="logo">
+                <img id="header-img" src="images\logo.png" alt="LOGO">
+            </div>
+            <div class="navbar-links">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="#header">About</a></li>
+                    <li class="nav-link"><a href="#video-head">Promo</a></li>
+                    <li class="nav-link"><a href="#submit">Contact</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <div class="welcome-block">
+            <!-- <figure>
+            <img src="images/kathakali.png" alt="kathakali" id="welcome-image">
+     </figure> -->
+        <p class="welcome-text">Kerala, a state on India's tropical Malabar Coast,
+             has nearly 600km of Arabian Sea shoreline. It's known for its palm-lined 
+             beaches and backwaters, a network of canals. Inland are the Western Ghats, 
+            mountains whose slopes support tea, coffee and spice plantations as well as wildlife.</p>
+        </div>
+    </header>
+
+    <div class="video-class" id="video-block">
+        <h1 id="video-head">Kerala Tourism Promo</h1>
+  
+        <iframe id="video" src="https://www.youtube.com/embed/R83BlU5nnbs">
+        </iframe>
+      </div>
+      <secttion id="mail">
+          <p id="display-text">
+            Wedged between the Western Ghats on the East and the Arabian Sea 
+            on the West, the narrow strip of land known as Kerala is a destination of a lifetime.
+
+            The timeless beauty of the palm fringed 
+            beaches of Kovalam and Varkala, the majesty of the undulating 
+            hills of Munnar and Vagamon, the serenity of the pristine backwaters of 
+            Kumarakom & Kuttanad and the enchanting woods and forests of Thekkady and 
+            Silent Valley will have you bowled over. 
+          </p>
+        <form action=" https://www.freecodecamp.com/email-submit" id="form">
+            <input type="email"
+            type="email" id="email" 
+            placeholder="Enter your email" 
+            required /> <br/>
+            <input type="submit" id="submit"
+             class="submit-btn" value="Send" />
+            
+        </form>
+      </secttion>
+      <footer id="footer">
+          All rights reserver &reg abc
+      </footer>
+    
+</body>
+</html>
