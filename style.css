@@ -183,17 +183,17 @@ body{
     .welcome-text{
         position: absolute;
         top: 50%;
-        left: 20%;
-        transform: translate(-10%,-40%);
+        left: 10%;
+        transform: translate(-5%,-40%);
         font-size: 1.3rem;
         background: rgb(69, 177, 78,0.4);
         padding: 2vw;
     
     }
     #video{
-        margin: auto;
-        margin-left: 2vw;
-        width: 95vw;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        width: 100vw;
         height: 40vh;
     }
     #mail{
@@ -218,6 +218,7 @@ body{
     }
     #submit{
         margin-left: 30vw;
+        margin-bottom: 5vw;
     }
     
 }
