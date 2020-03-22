@@ -16,10 +16,10 @@
             </div>
             <div class="navbar-links">
                 <ul class="nav-links">
-                    <li class="nav-link"><a href="#header">About</a></li>
-                    <li class="nav-link"><a href="#video-head">Promo</a></li>
-                    <li class="nav-link"><a href="#submit">Contact</a></li>
-                </ul>
+                    <li><a class="nav-link" href="#header">About</a></li>
+                    <li><a class="nav-link" href="#video-head">Promo</a></li>
+                    <li><a class="nav-link" href="#submit">Contact</a></li>
+                  </ul>
             </div>
             <div class="burger">
                 <div class="line1"></div>
@@ -28,9 +28,6 @@
             </div>
         </nav>
         <div class="welcome-block">
-            <!-- <figure>
-            <img src="images/kathakali.png" alt="kathakali" id="welcome-image">
-     </figure> -->
         <p class="welcome-text">Kerala, a state on India's tropical Malabar Coast,
              has nearly 600km of Arabian Sea shoreline. It's known for its palm-lined 
              beaches and backwaters, a network of canals. Inland are the Western Ghats, 
@@ -55,15 +52,18 @@
             Kumarakom & Kuttanad and the enchanting woods and forests of Thekkady and 
             Silent Valley will have you bowled over. 
           </p>
-        <form action=" https://www.freecodecamp.com/email-submit" id="form">
-            <input type="email"
-            type="email" id="email" 
-            placeholder="Enter your email" 
-            required /> <br/>
-            <input type="submit" id="submit"
-             class="submit-btn" value="Send" />
-            
-        </form>
+        <div class="input-section">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  placeholder="Enter your email address"
+                  required
+                />
+                <input id="submit" type="submit" value="Get Started" class="submit-btn" />
+              </form>
+        </div>
       </secttion>
       <footer id="footer">
           <p>created by anandhakrishnan</p>
